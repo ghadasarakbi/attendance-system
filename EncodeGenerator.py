@@ -9,7 +9,7 @@ from firebase_admin import storage
 # Initialize Firebase
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred, {
-    'storageBucket': "attendencesystem4561.appspot.com"
+    'storageBucket': ""
 })
 
 # Function to upload an image to Firebase Storage

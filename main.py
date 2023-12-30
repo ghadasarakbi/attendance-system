@@ -15,8 +15,8 @@ import pygame
 
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred, {
-    'databaseURL': "https://attendencesystem4561-default-rtdb.firebaseio.com/",
-    'storageBucket': "attendencesystem4561.appspot.com"
+    'databaseURL': "",
+    'storageBucket': ""
 })
 
 bucket = storage.bucket()

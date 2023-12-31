@@ -31,12 +31,12 @@ def play_welcome_message(student_name):
     welcome_text = f"Welcome, {student_name}"
     tts = gTTS(text=welcome_text, lang='en')
 
-    resources_dir = os.path.join(os.getcwd(), 'attendance system/MyScripts')
+    resources_dir = os.path.join(os.getcwd(), 'MyScripts')
     if not os.path.exists(resources_dir):
         os.makedirs(resources_dir)
 
     # Generate a unique filename
-    unique_filename = f"welcome_{datetime.now().strftime('%Y%m%d%H%M%S')}.mp3"
+    unique_filename = f"welcome_{student_name}.mp3"
     savefile = os.path.join(resources_dir, unique_filename)
 
     try:
